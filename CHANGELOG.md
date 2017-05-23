@@ -1,3 +1,10 @@
+### v0.2 | 05.20.17
+
+_Editor: Claire Oliver_
+
+- Copy Edits
+
+
 ### v0.1 | 05.09.17
 
 _Editor: Sam Stack_
