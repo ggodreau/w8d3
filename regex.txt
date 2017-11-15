@@ -8,11 +8,40 @@ ranges:
 negations:
 [^0-9] not 0 through 9 (not numbers)
 
-counts:
+character classes: (matches anything in the bracket as logical OR)
 [A-z]? matches A through z 0 or 1 characters
 [A-z]+ matches A through z 1 or more characters
 [A-z]{3,5} matches A through z between 3 and 5 characters
 [A-z]{,5} matches A through z up to 5 characters
 [A-z]* matches A through z up to infinity characters
+
+wildcards:
+. matches any character (except for line terminators)
+\w all alphanumeric characters
+\W all non alphanumeric characters
+\b word boundary (beginning or end)
+\d all numeric digits
+\D all non-numeric digits (whitespace, etc)
+\s all whitespace
+\S all non-whitespace characters
+\t tabs
+\r carriage return
+\n new line
+^ denotes the start of the string
+$ denotes the end of the string
++ matches between one and unlimited times
+
+
+match groups:
+()
+
+lookahead:
+N(?!B)\w+ words that start with N and do NOT have B as the second letter
+N(?=B)\w+ words that start with N and have B as the second letter
+^(?=.*\d)$ number must occur in string
+^(?=.*[a-z])$ lower case letter must occur in string
+^(?=.*[A-Z])$ upper case letter must occur in string
+
+
 
 
